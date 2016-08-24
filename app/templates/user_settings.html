@@ -1,22 +1,18 @@
 
-<!-- BG Image Title -->
-<div class="container-fluid bg_geo_03 bg_box_shadow_01 anim_bg" style="height: 500px; width: 100%; text-align: center">
-    <div style="text-align: center; font-family: quicksand; font-size: 100px; color: #ffffff; padding-top: 30px;">
-        Account Settings
-    </div>
-    <div style="text-align: center; font-family: quicksand; font-size: 21px; color: #ffffff; padding-top: 0px; margin-bottom: 20px;;">
-        Here you can change your preferences and configurate your settings.
-    </div>
-    <img src="{{ path_for('home') }}{{ profile_img }}" width="200px" height="200px" alt="User profile image" class="img-circle">
-</div>
-<div class="container-fluid">&nbsp;</div>
-
 <!-- Page Container -->
 <div id="account_settings" class="container" style="font-family: quicksand; margin-top: 20px;">
+    <!-- Title Bar-->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Account Settings <img src="{{ path_for('home') }}{{ profile_img }}" width="75px" height="75px" alt="User profile image" class="img-circle"></h1>
+            <p>Here you can change your preferences and configurate your settings.</p>
+            <br>
+        </div>
+    </div>
 
     <!-- Setting Tabs -->
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-12">
             <div id="setting_info">
                 <!-- Setting Codes -->
                 {% if code == "profile_error_1" %}<div data-tab="user_profile_tab" class="message alert alert-warning" role="alert"><span class="fa fa-exclamation-triangle"></span> Your profile image is to big (max size: 1MB).</div>{% endif %}
@@ -43,7 +39,7 @@
 
     <!-- User Settings Page -->
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 tab-content">
+        <div class="col-lg-12 tab-content">
             <!-- User Profile Tab -->
             <div id="user_profile_tab" class="panel panel-default tab-pane active" style="border-top: none;">
                 <div class="panel-body ">

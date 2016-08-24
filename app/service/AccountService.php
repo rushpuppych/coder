@@ -2,6 +2,7 @@
 
 namespace app\service;
 use lib\vectorsix\V6Mailer;
+use ReCaptcha\ReCaptcha;
 
 /**
  * AccountSettings

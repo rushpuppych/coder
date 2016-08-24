@@ -28,7 +28,7 @@ $arrDbConfig['dev'] = [
     'username' => 'root',
     'password' => 'root',
     'charset' => 'utf8',
-    'port' => 3306
+    'port' => 8886
 ];
 
 
@@ -70,7 +70,7 @@ $arrConfig['user_navigation']['left'] = [
     ]]
 ];
 $arrConfig['user_navigation']['right'] = [
-    '1' => ['text' => 'Account', 'children' => [
+    '1' => ['text' => '', 'icon' => 'fa fa-user',  'children' => [
         '0' => ['text' => 'Settings', 'icon' => 'fa fa-cog', 'linkto' => 'user_settings', 'args' => ['code' => 'ok']],
         '1' => ['divider' => true],
         '2' => ['text' => 'Deutsch', 'href' => '#'],

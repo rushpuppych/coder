@@ -16,7 +16,7 @@ require "vendor/autoload.php";
 // Create App
 // The App starts in Public mode if the client is not
 // localhost.
-if($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+if($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['SERVER_NAME'] == 'localhost') {
     $configuration = [
         'settings' => [
             'displayErrorDetails' => true,

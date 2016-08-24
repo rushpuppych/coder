@@ -23,9 +23,18 @@ class HomeUserController extends BaseController
      */
     public function index($request, $response, $args)
     {
+        // Get Profile Image
+        if(empty($this->session['user']['profile_img'])) {
+            $strProfileImage = 'assets/image/placeholder/profile.png';
+        } else {
+            $strProfileImage = 'data/user_upload/' . $this->session['user']['email'] . '/' . $this->session['user']['profile_img'];
+        }
+
+        // Render View
         $this->view->render($response, 'index.html', [
             'page' => 'home_user.html',
-            'vue' => 'home_user.js'
+            'vue' => 'home_user.js',
+            'profile_img' => $strProfileImage,
         ]);
     }
 }

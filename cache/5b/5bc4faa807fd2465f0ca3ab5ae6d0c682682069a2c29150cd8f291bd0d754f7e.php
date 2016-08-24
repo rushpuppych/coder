@@ -17,91 +17,87 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
     {
         // line 1
         echo "
-<!-- BG Image Title -->
-<div class=\"container-fluid bg_geo_03 bg_box_shadow_01 anim_bg\" style=\"height: 500px; width: 100%; text-align: center\">
-    <div style=\"text-align: center; font-family: quicksand; font-size: 100px; color: #ffffff; padding-top: 30px;\">
-        Account Settings
-    </div>
-    <div style=\"text-align: center; font-family: quicksand; font-size: 21px; color: #ffffff; padding-top: 0px; margin-bottom: 20px;;\">
-        Here you can change your preferences and configurate your settings.
-    </div>
-    <img src=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
-        echo twig_escape_filter($this->env, (isset($context["profile_img"]) ? $context["profile_img"] : null), "html", null, true);
-        echo "\" width=\"200px\" height=\"200px\" alt=\"User profile image\" class=\"img-circle\">
-</div>
-<div class=\"container-fluid\">&nbsp;</div>
-
 <!-- Page Container -->
 <div id=\"account_settings\" class=\"container\" style=\"font-family: quicksand; margin-top: 20px;\">
+    <!-- Title Bar-->
+    <div class=\"row\">
+        <div class=\"col-lg-12\">
+            <h1>Account Settings <img src=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["profile_img"]) ? $context["profile_img"] : null), "html", null, true);
+        echo "\" width=\"75px\" height=\"75px\" alt=\"User profile image\" class=\"img-circle\"></h1>
+            <p>Here you can change your preferences and configurate your settings.</p>
+            <br>
+        </div>
+    </div>
 
     <!-- Setting Tabs -->
     <div class=\"row\">
-        <div class=\"col-lg-8 col-lg-offset-2\">
+        <div class=\"col-lg-12\">
             <div id=\"setting_info\">
                 <!-- Setting Codes -->
                 ";
-        // line 22
+        // line 18
         if (((isset($context["code"]) ? $context["code"] : null) == "profile_error_1")) {
             echo "<div data-tab=\"user_profile_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Your profile image is to big (max size: 1MB).</div>";
         }
-        // line 23
+        // line 19
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "profile_error_2")) {
             echo "<div data-tab=\"user_profile_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Your image profile doesnt have the correct format (allowed are .jpg, .png, .gif).</div>";
         }
-        // line 24
+        // line 20
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "profile_error_3")) {
             echo "<div data-tab=\"user_profile_tab\" class=\"message alert alert-danger\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Sorry there was an Error. Please try again.</div>";
         }
-        // line 25
+        // line 21
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "profile_success")) {
             echo "<div data-tab=\"user_profile_tab\" class=\"message alert alert-success\" role=\"alert\"><span class=\"fa fa-check-circle-o\"></span> Profile successfully updatet.</div>";
         }
-        // line 26
+        // line 22
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "password_error_1")) {
             echo "<div data-tab=\"reset_password_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Password dosnt match the retyped password. Please try again.</div>";
         }
-        // line 27
+        // line 23
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "password_error_2")) {
             echo "<div data-tab=\"reset_password_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> The Old Password is not correct. Please try again.</div>";
         }
-        // line 28
+        // line 24
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "password_success_1")) {
             echo "<div data-tab=\"reset_password_tab\" class=\"message alert alert-success\" role=\"alert\"><span class=\"fa fa-check-circle-o\"></span> Password successfully changed.</div>";
         }
-        // line 29
+        // line 25
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "email_success_1")) {
             echo "<div data-tab=\"reset_email_tab\" class=\"message alert alert-success\" role=\"alert\"><span class=\"fa fa-envelope-o\"></span> The email change link is sendet. Please Check your mails.</div>";
         }
-        // line 30
+        // line 26
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "email_error_1")) {
             echo "<div data-tab=\"reset_email_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Sorry there was an Error. Please try again.</div>";
         }
-        // line 31
+        // line 27
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "email_success_2")) {
             echo "<div data-tab=\"reset_email_tab\" class=\"message alert alert-success\" role=\"alert\"><span class=\"fa fa-check-circle-o\"></span> Email successfully changed.</div>";
         }
-        // line 32
+        // line 28
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "delete_error_1")) {
             echo "<div data-tab=\"delete_account_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Please write \"Yes\" in the first Checkbox. Please try again.</div>";
         }
-        // line 33
+        // line 29
         echo "                ";
         if (((isset($context["code"]) ? $context["code"] : null) == "delete_error_2")) {
             echo "<div data-tab=\"delete_account_tab\" class=\"message alert alert-warning\" role=\"alert\"><span class=\"fa fa-exclamation-triangle\"></span> Please enter you correct account Password..</div>";
         }
-        // line 34
+        // line 30
         echo "            </div>
             <ul class=\"nav nav-tabs\">
                 <li role=\"presentation\" class=\"active\"><a href=\"#user_profile_tab\" data-toggle=\"tab\">User Profile</a></li>
@@ -114,18 +110,18 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
 
     <!-- User Settings Page -->
     <div class=\"row\">
-        <div class=\"col-lg-8 col-lg-offset-2 tab-content\">
+        <div class=\"col-lg-12 tab-content\">
             <!-- User Profile Tab -->
             <div id=\"user_profile_tab\" class=\"panel panel-default tab-pane active\" style=\"border-top: none;\">
                 <div class=\"panel-body \">
                     <form action=\"";
-        // line 50
+        // line 46
         echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("account_change_profile"), "html", null, true);
         echo "\" method=\"post\" enctype=\"multipart/form-data\">
                         <div class=\"form-group\">
                             <label for=\"nickname\">Nickname</label>
                             <input type=\"text\" name=\"nickname\" class=\"form-control\" id=\"nickname\" placeholder=\"Nickname\" value=\"";
-        // line 53
+        // line 49
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["form_data"]) ? $context["form_data"] : null), "nickname", array()), "html", null, true);
         echo "\">
                         </div>
@@ -133,50 +129,50 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
                             <label for=\"default_lang\">Default Language</label>
                             <select class=\"form-control\" name=\"language\" id=\"default_lang\">
                                 ";
-        // line 58
+        // line 54
         if (($this->getAttribute((isset($context["form_data"]) ? $context["form_data"] : null), "default_lang", array()) == "en")) {
-            // line 59
+            // line 55
             echo "                                    <option value=\"en\" selected>English</option>
                                 ";
         } else {
-            // line 61
+            // line 57
             echo "                                    <option value=\"en\">English</option>
                                 ";
         }
-        // line 63
+        // line 59
         echo "                                ";
         if (($this->getAttribute((isset($context["form_data"]) ? $context["form_data"] : null), "default_lang", array()) == "de")) {
-            // line 64
+            // line 60
             echo "                                    <option value=\"de\" selected>Deutsch</option>
                                 ";
         } else {
-            // line 66
+            // line 62
             echo "                                    <option value=\"de\">Deutsch</option>
                                 ";
         }
-        // line 68
+        // line 64
         echo "                                ";
         if (($this->getAttribute((isset($context["form_data"]) ? $context["form_data"] : null), "default_lang", array()) == "fr")) {
-            // line 69
+            // line 65
             echo "                                    <option value=\"fr\" selected>Français</option>
                                 ";
         } else {
-            // line 71
+            // line 67
             echo "                                    <option value=\"fr\">Français</option>
                                 ";
         }
-        // line 73
+        // line 69
         echo "                                ";
         if (($this->getAttribute((isset($context["form_data"]) ? $context["form_data"] : null), "default_lang", array()) == "it")) {
-            // line 74
+            // line 70
             echo "                                    <option value=\"it\" selected>Italiano</option>
                                 ";
         } else {
-            // line 76
+            // line 72
             echo "                                    <option value=\"it\">Italiano</option>
                                 ";
         }
-        // line 78
+        // line 74
         echo "                            </select>
                         </div>
                         <div class=\"form-group\">
@@ -194,7 +190,7 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
             <div id=\"reset_password_tab\" class=\"panel panel-default tab-pane\" style=\"border-top: none;\">
                 <div class=\"panel-body \">
                     <form  action=\"";
-        // line 94
+        // line 90
         echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("account_change_password"), "html", null, true);
         echo "\" method=\"post\" enctype=\"multipart/form-data\">
                         <div class=\"form-group\">
@@ -219,7 +215,7 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
             <div id=\"reset_email_tab\" class=\"panel panel-default tab-pane\" style=\"border-top: none;\">
                 <div class=\"panel-body \">
                     <form action=\"";
-        // line 116
+        // line 112
         echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("account_send_change_email"), "html", null, true);
         echo "\" method=\"post\" enctype=\"multipart/form-data\">
                         <p>If you want to change your email address (witch is also your loginname), type in your new email and we send you a activation link.</p>
@@ -236,7 +232,7 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
             <div id=\"delete_account_tab\" class=\"panel panel-default tab-pane\" style=\"border-top: none;\">
                 <div class=\"panel-body \">
                     <form action=\"";
-        // line 130
+        // line 126
         echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("account_delete"), "html", null, true);
         echo "\" method=\"post\">
                         <div class=\"alert alert-danger\" role=\"alert\"><b>Caution:</b><br> After you deleted your account it is not possible to restore it!!</div>
@@ -270,28 +266,24 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
 
     public function getDebugInfo()
     {
-        return array (  240 => 130,  223 => 116,  198 => 94,  180 => 78,  176 => 76,  172 => 74,  169 => 73,  165 => 71,  161 => 69,  158 => 68,  154 => 66,  150 => 64,  147 => 63,  143 => 61,  139 => 59,  137 => 58,  129 => 53,  123 => 50,  105 => 34,  100 => 33,  95 => 32,  90 => 31,  85 => 30,  80 => 29,  75 => 28,  70 => 27,  65 => 26,  60 => 25,  55 => 24,  50 => 23,  46 => 22,  30 => 10,  19 => 1,);
+        return array (  236 => 126,  219 => 112,  194 => 90,  176 => 74,  172 => 72,  168 => 70,  165 => 69,  161 => 67,  157 => 65,  154 => 64,  150 => 62,  146 => 60,  143 => 59,  139 => 57,  135 => 55,  133 => 54,  125 => 49,  119 => 46,  101 => 30,  96 => 29,  91 => 28,  86 => 27,  81 => 26,  76 => 25,  71 => 24,  66 => 23,  61 => 22,  56 => 21,  51 => 20,  46 => 19,  42 => 18,  27 => 7,  19 => 1,);
     }
 }
 /* */
-/* <!-- BG Image Title -->*/
-/* <div class="container-fluid bg_geo_03 bg_box_shadow_01 anim_bg" style="height: 500px; width: 100%; text-align: center">*/
-/*     <div style="text-align: center; font-family: quicksand; font-size: 100px; color: #ffffff; padding-top: 30px;">*/
-/*         Account Settings*/
-/*     </div>*/
-/*     <div style="text-align: center; font-family: quicksand; font-size: 21px; color: #ffffff; padding-top: 0px; margin-bottom: 20px;;">*/
-/*         Here you can change your preferences and configurate your settings.*/
-/*     </div>*/
-/*     <img src="{{ path_for('home') }}{{ profile_img }}" width="200px" height="200px" alt="User profile image" class="img-circle">*/
-/* </div>*/
-/* <div class="container-fluid">&nbsp;</div>*/
-/* */
 /* <!-- Page Container -->*/
 /* <div id="account_settings" class="container" style="font-family: quicksand; margin-top: 20px;">*/
+/*     <!-- Title Bar-->*/
+/*     <div class="row">*/
+/*         <div class="col-lg-12">*/
+/*             <h1>Account Settings <img src="{{ path_for('home') }}{{ profile_img }}" width="75px" height="75px" alt="User profile image" class="img-circle"></h1>*/
+/*             <p>Here you can change your preferences and configurate your settings.</p>*/
+/*             <br>*/
+/*         </div>*/
+/*     </div>*/
 /* */
 /*     <!-- Setting Tabs -->*/
 /*     <div class="row">*/
-/*         <div class="col-lg-8 col-lg-offset-2">*/
+/*         <div class="col-lg-12">*/
 /*             <div id="setting_info">*/
 /*                 <!-- Setting Codes -->*/
 /*                 {% if code == "profile_error_1" %}<div data-tab="user_profile_tab" class="message alert alert-warning" role="alert"><span class="fa fa-exclamation-triangle"></span> Your profile image is to big (max size: 1MB).</div>{% endif %}*/
@@ -318,7 +310,7 @@ class __TwigTemplate_c8be420c56d8e7f378691333075989b84a6d11de8ca5ae71fa23154ecc2
 /* */
 /*     <!-- User Settings Page -->*/
 /*     <div class="row">*/
-/*         <div class="col-lg-8 col-lg-offset-2 tab-content">*/
+/*         <div class="col-lg-12 tab-content">*/
 /*             <!-- User Profile Tab -->*/
 /*             <div id="user_profile_tab" class="panel panel-default tab-pane active" style="border-top: none;">*/
 /*                 <div class="panel-body ">*/
