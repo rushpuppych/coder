@@ -1,0 +1,146 @@
+.bg_geo_01 {
+    background-image: url(images/01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_02 {
+    background-image: url(images/02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_03 {
+    background-image: url(images/03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_04 {
+    background-image: url(images/04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_05 {
+    background-image: url(images/05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_06 {
+    background-image: url(images/06.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_07 {
+    background-image: url(images/07.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_08 {
+    background-image: url(images/08.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_09 {
+    background-image: url(images/09.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_10 {
+    background-image: url(images/10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_11 {
+    background-image: url(images/11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_12 {
+    background-image: url(images/12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_13 {
+    background-image: url(images/13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bg_geo_14 {
+    background-image: url(images/14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+@keyframes bg_zoom_anim {
+    from {background-size: 100% 100%;}
+    to {background-size: 150% 150%;}
+}
+
+.anim_bg {
+    animation-name: bg_zoom_anim;
+    animation: 10s infinite alternate linear;
+}
+
+
+.bg_box_shadow_01 {
+    -webkit-box-shadow: inset 0px 13px 11px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 13px 11px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 13px 11px -3px rgba(0,0,0,0.5);
+}
+
+.bg_box_shadow_02 {
+    -webkit-box-shadow: inset 0px -13px 11px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -13px 11px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -13px 11px -3px rgba(0,0,0,0.5);
+}
+
+.bg_box_shadow_03 {
+    -webkit-box-shadow: 0px 13px 11px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 13px 11px -3px rgba(0,0,0,0.5);
+    box-shadow: 0px 13px 11px -3px rgba(0,0,0,0.5);
+}
+
+.bg_box_shadow_04 {
+    -webkit-box-shadow: 0px -13px 11px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px -13px 11px -3px rgba(0,0,0,0.5);
+    box-shadow: 0px -13px 11px -3px rgba(0,0,0,0.5);
+}

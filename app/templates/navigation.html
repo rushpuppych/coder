@@ -1,0 +1,81 @@
+
+<!-- Bootstrap Navigation -->
+<nav id="bootstrap-navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path_for('home') }}">
+                <span class="fa fa-angle-left"></span><span class="fa fa-bolt"></span><span class="fa fa-angle-right"></span> CodeBot
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Render Navigation Left -->
+            <ul class="nav navbar-nav">
+                {% for navi in navigation.left %}
+                    {% if navi.children is defined %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {{ navi.text }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% for child in navi.children %}
+                                {% if child.href is defined %}
+                                    <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                {% elseif child.linkto is defined %}
+                                    {%if child.args is defined %}
+                                        <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                    {% else %}
+                                        <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                    {% endif %}
+                                {% elseif child.divider is defined %}
+                                    <li role="separator" class="divider"></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% elseif navi.href is defined %}
+                        <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                    {% elseif navi.linkto is defined %}
+                        <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- Render Navigation Right -->
+            <ul class="nav navbar-nav navbar-right">
+                {% for navi in navigation.right %}
+                    {% if navi.children is defined %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {{ navi.text }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            {% for child in navi.children %}
+                                {% if child.href is defined %}
+                                    <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                {% elseif child.linkto is defined %}
+                                    {%if child.args is defined %}
+                                        <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                    {% else %}
+                                        <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                    {% endif %}
+                                {% elseif child.divider is defined %}
+                                    <li role="separator" class="divider"></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% elseif navi.href is defined %}
+                    <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                    {% elseif navi.linkto is defined %}
+                    <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="nav-spacer" style="margin-bottom: 50px;"></div>

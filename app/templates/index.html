@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="{{ config.html_lang }}">
+    <head>
+        <!-- Page Config -->
+        <meta charset="{{ config.meta_charset }}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ config.meta_description }}">
+        <meta name="keywords" content="{{ config.meta_keywords }}">
+        <meta name="application-name" content="{{ config.meta_application-name }}">
+        <meta name="author" content="{{ config.meta_author }}">
+        <title>{{ config.page_title }}</title>
+         
+        <!-- Including Framework Stylesheets -->
+        <link rel="stylesheet" href="{{ path_for('home') }}assets/javascript/bootstrap-3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ path_for('home') }}assets/javascript/flat-ui-master/dist/css/flat-ui.min.css">
+        <link rel="stylesheet" href="{{ path_for('home') }}assets/javascript/font-awesome-4.5.0/css/font-awesome.min.css">
+        
+        <!-- Including Custom Stylesheets -->
+        <link rel="stylesheet" href="{{ path_for('home') }}assets/fonts/fonts.css">
+        <link rel="stylesheet" href="{{ path_for('home') }}assets/image/backgrounds/bg_geo/bg_geo.css">
+        <link rel="stylesheet" href="{{ path_for('home') }}assets/styles/global_style.css">
+    </head>
+    <body>
+        <div id="app">
+            <!-- Bootstrap Navigation -->
+            {{ include('navigation.html') }}
+
+            <!-- Vue Routing Body -->
+            {{ include(page) }}
+        </div>
+    </body>
+    
+    <!-- Include Framework Javascripts -->
+    <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/jquery-1.12.1/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/flat-ui-master/dist/js/flat-ui.min.js"></script>
+    <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/vue.js/vue.min.js"></script>
+    <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/vue.js/vue-strap.min.js"></script>
+    <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/vue.js/vue-validator.min.js"></script>
+    <script type="text/javascript">Vue.config.delimiters = ['[[', ']]'];</script>
+    {% if vue is defined %}<script type="text/javascript" src="{{ path_for('home') }}app/templates/{{ vue }}"></script>{% endif %}
+    <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Load Components -->
+    {% if components is defined %}
+        {% for component in components %}
+            <script type="text/javascript" src="{{ path_for('home') }}app/components/{{ component }}.js"></script>
+        {% endfor %}
+    {% endif %}
+    {% if js_vars is defined %}
+        <script type="text/javascript">
+        controller.home = "{{ path_for('home') }}";
+        {% for key, js_var in js_vars %}
+            controller.{{ key }} = "{{ js_var }}";
+        {% endfor %}
+         </script>
+    {% endif %}    
+    
+    <!-- Custom Javascripts-->
+    
+</html>
