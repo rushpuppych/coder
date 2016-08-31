@@ -56,6 +56,7 @@ $app->get('/user/settings/{code}', 'UserMenuController:settings')->add(new \lib\
  * App Demo Routing
  * That all the routing you can find in the Navigation "App Demo"
  */
+$app->get('/appdemo/chartdemo/', 'ChartController:index')->add(new \lib\AuthMiddleware())->setName('demo_chart');
 $app->get('/appdemo/googlemap/', 'GoogleMapController:index')->add(new \lib\AuthMiddleware())->setName('demo_googlemap');
 $app->get('/appdemo/websocket/', 'WebSocketController:index')->add(new \lib\AuthMiddleware())->setName('demo_websocket');
 

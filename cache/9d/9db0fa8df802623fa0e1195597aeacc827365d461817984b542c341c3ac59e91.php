@@ -116,9 +116,22 @@ class __TwigTemplate_94e351d4983e77a5b47b493b274009ce175dc0dd3acbf2aad1f0373bc05
         // line 40
         echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
         echo "assets/javascript/vue.js/vue-validator.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 41
+        echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
+        echo "assets/javascript/Chart.js-2.2.2/Chart.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 42
+        echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
+        echo "assets/javascript/justgage/justgage.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 43
+        echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
+        echo "assets/javascript/justgage/raphael-2.1.4.min.js\"></script>
+
     <script type=\"text/javascript\">Vue.config.delimiters = ['[[', ']]'];</script>
     ";
-        // line 42
+        // line 46
         if (array_key_exists("vue", $context)) {
             echo "<script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
@@ -126,19 +139,19 @@ class __TwigTemplate_94e351d4983e77a5b47b493b274009ce175dc0dd3acbf2aad1f0373bc05
             echo twig_escape_filter($this->env, (isset($context["vue"]) ? $context["vue"] : null), "html", null, true);
             echo "\"></script>";
         }
-        // line 43
+        // line 47
         echo "    <script type=\"text/javascript\" src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Load Components -->
     ";
-        // line 46
+        // line 50
         if (array_key_exists("components", $context)) {
-            // line 47
+            // line 51
             echo "        ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["components"]) ? $context["components"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["component"]) {
-                // line 48
+                // line 52
                 echo "            <script type=\"text/javascript\" src=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
                 echo "app/components/";
@@ -149,11 +162,41 @@ class __TwigTemplate_94e351d4983e77a5b47b493b274009ce175dc0dd3acbf2aad1f0373bc05
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['component'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 50
+            // line 54
             echo "    ";
         }
-        // line 51
+        // line 55
+        echo "    ";
+        if (array_key_exists("js_vars", $context)) {
+            // line 56
+            echo "        <script type=\"text/javascript\">
+        controller.home = \"";
+            // line 57
+            echo twig_escape_filter($this->env, $this->env->getExtension('slim')->pathFor("home"), "html", null, true);
+            echo "\";
+        ";
+            // line 58
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["js_vars"]) ? $context["js_vars"] : null));
+            foreach ($context['_seq'] as $context["key"] => $context["js_var"]) {
+                // line 59
+                echo "            controller.";
+                echo twig_escape_filter($this->env, $context["key"], "html", null, true);
+                echo " = \"";
+                echo twig_escape_filter($this->env, $context["js_var"], "html", null, true);
+                echo "\";
+        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['key'], $context['js_var'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 61
+            echo "         </script>
+    ";
+        }
+        // line 62
         echo "    
+    
     <!-- Custom Javascripts-->
     
 </html>";
@@ -171,7 +214,7 @@ class __TwigTemplate_94e351d4983e77a5b47b493b274009ce175dc0dd3acbf2aad1f0373bc05
 
     public function getDebugInfo()
     {
-        return array (  156 => 51,  153 => 50,  142 => 48,  137 => 47,  135 => 46,  130 => 43,  122 => 42,  117 => 40,  113 => 39,  109 => 38,  105 => 37,  101 => 36,  93 => 31,  87 => 28,  79 => 23,  75 => 22,  71 => 21,  65 => 18,  61 => 17,  57 => 16,  51 => 13,  47 => 12,  43 => 11,  39 => 10,  35 => 9,  29 => 6,  23 => 3,  19 => 1,);
+        return array (  198 => 62,  194 => 61,  183 => 59,  179 => 58,  175 => 57,  172 => 56,  169 => 55,  166 => 54,  155 => 52,  150 => 51,  148 => 50,  143 => 47,  135 => 46,  129 => 43,  125 => 42,  121 => 41,  117 => 40,  113 => 39,  109 => 38,  105 => 37,  101 => 36,  93 => 31,  87 => 28,  79 => 23,  75 => 22,  71 => 21,  65 => 18,  61 => 17,  57 => 16,  51 => 13,  47 => 12,  43 => 11,  39 => 10,  35 => 9,  29 => 6,  23 => 3,  19 => 1,);
     }
 }
 /* */
@@ -214,6 +257,10 @@ class __TwigTemplate_94e351d4983e77a5b47b493b274009ce175dc0dd3acbf2aad1f0373bc05
 /*     <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/vue.js/vue.min.js"></script>*/
 /*     <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/vue.js/vue-strap.min.js"></script>*/
 /*     <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/vue.js/vue-validator.min.js"></script>*/
+/*     <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/Chart.js-2.2.2/Chart.min.js"></script>*/
+/*     <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/justgage/justgage.js"></script>*/
+/*     <script type="text/javascript" src="{{ path_for('home') }}assets/javascript/justgage/raphael-2.1.4.min.js"></script>*/
+/* */
 /*     <script type="text/javascript">Vue.config.delimiters = ['[[', ']]'];</script>*/
 /*     {% if vue is defined %}<script type="text/javascript" src="{{ path_for('home') }}app/templates/{{ vue }}"></script>{% endif %}*/
 /*     <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>*/
@@ -224,6 +271,14 @@ class __TwigTemplate_94e351d4983e77a5b47b493b274009ce175dc0dd3acbf2aad1f0373bc05
 /*             <script type="text/javascript" src="{{ path_for('home') }}app/components/{{ component }}.js"></script>*/
 /*         {% endfor %}*/
 /*     {% endif %}*/
+/*     {% if js_vars is defined %}*/
+/*         <script type="text/javascript">*/
+/*         controller.home = "{{ path_for('home') }}";*/
+/*         {% for key, js_var in js_vars %}*/
+/*             controller.{{ key }} = "{{ js_var }}";*/
+/*         {% endfor %}*/
+/*          </script>*/
+/*     {% endif %}    */
 /*     */
 /*     <!-- Custom Javascripts-->*/
 /*     */

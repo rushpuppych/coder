@@ -17,7 +17,13 @@ $container['UserMenuController'] = function ($container) {
     return new \app\controller\UserMenuController($container);
 };
 
-// App Demo Controller
+
+// Chart Demo Controller
+$container['ChartController'] = function ($container) {
+    return new \app\controller\ChartController($container);
+};
+
+// GoogleMap Demo Controller
 $container['GoogleMapController'] = function ($container) {
     return new \app\controller\GoogleMapController($container);
 };
