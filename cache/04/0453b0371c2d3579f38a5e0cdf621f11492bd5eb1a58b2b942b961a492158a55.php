@@ -18,7 +18,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
         // line 1
         echo "
 <!-- BG Image Title -->
-<div class=\"container-fluid bg_geo_09 bg_box_shadow_01 anim_bg\" style=\"height: 500px; width: 100%;\">
+<div class=\"container-fluid bg_geo_09 anim_bg hidden-xs\" style=\"height: 500px; width: 100%;\">
     <div style=\"text-align: center; color: #ffffff; padding-top: 60px;\">
         <span style=\"font-size: 164px;\" class=\"fa fa-angle-left\"></span>
         <span style=\"font-size: 164px;\" class=\"fa fa-bolt\"></span>
@@ -35,13 +35,13 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 
 <div id=\"home_guest\" class=\"container\" style=\"font-family: quicksand;\">
     <!-- Account Tabs -->
-    <div class=\"row\" style=\"padding-bottom: 20px; padding-top: 20px;\">
-        <div id=\"navigation_tab\" class=\"col-sm-8 col-sm-offset-2\">
+    <div class=\"row\" style=\"padding-bottom: 20px; padding-top: 20px; font-size: 16px;\">
+        <div id=\"navigation_tab\" class=\"col-sm-12\">
             <ul class=\"nav nav-pills\">
-                <li role=\"presentation\" class=\"active\"><a href=\"#login_tab\" data-toggle=\"tab\">Login</a></li>
-                <li role=\"presentation\"><a href=\"#signup_tab\" data-toggle=\"tab\">Signup</a></li>
-                <li role=\"presentation\"><a href=\"#recovery_tab\" data-toggle=\"tab\">Password Recovery</a></li>
-                <li role=\"presentation\" class=\"pull-right\"><a href=\"#impressum_tab\" data-toggle=\"tab\">Impressum</a></li>
+                <li role=\"presentation\" class=\"active\"><a href=\"#login_tab\" style=\"padding: 8px;\" data-toggle=\"tab\">Login</a></li>
+                <li role=\"presentation\"><a href=\"#signup_tab\" data-toggle=\"tab\" style=\"padding: 8px;\">Signup</a></li>
+                <li role=\"presentation\"><a href=\"#recovery_tab\" data-toggle=\"tab\" style=\"padding: 8px;\">Recovery</a></li>
+                <li role=\"presentation\" class=\"pull-right\"><a href=\"#impressum_tab\" data-toggle=\"tab\" style=\"padding: 8px;\">Impressum</a></li>
             </ul>
         </div>
     </div>
@@ -49,7 +49,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
     <!-- Tab Contents -->
     <div class=\"row tab-content\" style=\"padding-bottom: 100px;\">
         <!-- Login Form -->
-        <div id=\"login_tab\" class=\"col-sm-8 col-sm-offset-2 tab-pane active\">
+        <div id=\"login_tab\" class=\"col-sm-12 tab-pane active\">
             <h1>Login</h1><hr>
             <div id=\"login_info\">
                 <!-- Login Codes -->
@@ -123,7 +123,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
         </div>
 
         <!-- Signup Form -->
-        <div id=\"signup_tab\" class=\"col-sm-8 col-sm-offset-2 tab-pane\">
+        <div id=\"signup_tab\" class=\"col-sm-12 tab-pane\">
             <h1>Signup</h1><hr>
             <div id=\"signup_info\">
                 <!-- Signup Codes -->
@@ -177,7 +177,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
         </div>
 
         <!-- Password Recovery Form -->
-        <div id=\"recovery_tab\" class=\"col-sm-8 col-sm-offset-2 tab-pane\">
+        <div id=\"recovery_tab\" class=\"col-sm-12 tab-pane\">
             <h1>Password Recovery</h1><hr>
             <div id=\"recovery_info\">
                 <!-- Recovery Codes -->
@@ -250,7 +250,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
             .btn-xing:active,.btn-xing.active,.open .dropdown-toggle.btn-xing{background-image:none}
             .btn-xing.disabled,.btn-xing[disabled],fieldset[disabled] .btn-xing,.btn-xing.disabled:hover,.btn-xing[disabled]:hover,fieldset[disabled] .btn-xing:hover,.btn-xing.disabled:focus,.btn-xing[disabled]:focus,fieldset[disabled] .btn-xing:focus,.btn-xing.disabled:active,.btn-xing[disabled]:active,fieldset[disabled] .btn-xing:active,.btn-xing.disabled.active,.btn-xing[disabled].active,fieldset[disabled] .btn-xing.active{background-color:#0B614B;border-color:rgba(0,0,0,0.2)}
         </style>
-        <div id=\"impressum_tab\" class=\"col-sm-8 col-sm-offset-2 tab-pane\">
+        <div id=\"impressum_tab\" class=\"col-sm-12 tab-pane\">
             <h1>Impressum</h1><hr>
             <div class=\"row\">
                 <div class=\"col-sm-6\">
@@ -306,7 +306,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 }
 /* */
 /* <!-- BG Image Title -->*/
-/* <div class="container-fluid bg_geo_09 bg_box_shadow_01 anim_bg" style="height: 500px; width: 100%;">*/
+/* <div class="container-fluid bg_geo_09 anim_bg hidden-xs" style="height: 500px; width: 100%;">*/
 /*     <div style="text-align: center; color: #ffffff; padding-top: 60px;">*/
 /*         <span style="font-size: 164px;" class="fa fa-angle-left"></span>*/
 /*         <span style="font-size: 164px;" class="fa fa-bolt"></span>*/
@@ -323,13 +323,13 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 /* */
 /* <div id="home_guest" class="container" style="font-family: quicksand;">*/
 /*     <!-- Account Tabs -->*/
-/*     <div class="row" style="padding-bottom: 20px; padding-top: 20px;">*/
-/*         <div id="navigation_tab" class="col-sm-8 col-sm-offset-2">*/
+/*     <div class="row" style="padding-bottom: 20px; padding-top: 20px; font-size: 16px;">*/
+/*         <div id="navigation_tab" class="col-sm-12">*/
 /*             <ul class="nav nav-pills">*/
-/*                 <li role="presentation" class="active"><a href="#login_tab" data-toggle="tab">Login</a></li>*/
-/*                 <li role="presentation"><a href="#signup_tab" data-toggle="tab">Signup</a></li>*/
-/*                 <li role="presentation"><a href="#recovery_tab" data-toggle="tab">Password Recovery</a></li>*/
-/*                 <li role="presentation" class="pull-right"><a href="#impressum_tab" data-toggle="tab">Impressum</a></li>*/
+/*                 <li role="presentation" class="active"><a href="#login_tab" style="padding: 8px;" data-toggle="tab">Login</a></li>*/
+/*                 <li role="presentation"><a href="#signup_tab" data-toggle="tab" style="padding: 8px;">Signup</a></li>*/
+/*                 <li role="presentation"><a href="#recovery_tab" data-toggle="tab" style="padding: 8px;">Recovery</a></li>*/
+/*                 <li role="presentation" class="pull-right"><a href="#impressum_tab" data-toggle="tab" style="padding: 8px;">Impressum</a></li>*/
 /*             </ul>*/
 /*         </div>*/
 /*     </div>*/
@@ -337,7 +337,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 /*     <!-- Tab Contents -->*/
 /*     <div class="row tab-content" style="padding-bottom: 100px;">*/
 /*         <!-- Login Form -->*/
-/*         <div id="login_tab" class="col-sm-8 col-sm-offset-2 tab-pane active">*/
+/*         <div id="login_tab" class="col-sm-12 tab-pane active">*/
 /*             <h1>Login</h1><hr>*/
 /*             <div id="login_info">*/
 /*                 <!-- Login Codes -->*/
@@ -367,7 +367,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 /*         </div>*/
 /* */
 /*         <!-- Signup Form -->*/
-/*         <div id="signup_tab" class="col-sm-8 col-sm-offset-2 tab-pane">*/
+/*         <div id="signup_tab" class="col-sm-12 tab-pane">*/
 /*             <h1>Signup</h1><hr>*/
 /*             <div id="signup_info">*/
 /*                 <!-- Signup Codes -->*/
@@ -405,7 +405,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 /*         </div>*/
 /* */
 /*         <!-- Password Recovery Form -->*/
-/*         <div id="recovery_tab" class="col-sm-8 col-sm-offset-2 tab-pane">*/
+/*         <div id="recovery_tab" class="col-sm-12 tab-pane">*/
 /*             <h1>Password Recovery</h1><hr>*/
 /*             <div id="recovery_info">*/
 /*                 <!-- Recovery Codes -->*/
@@ -458,7 +458,7 @@ class __TwigTemplate_6d1abde69b390d1b8ef5126ac65a9820796133590872254db406309bd56
 /*             .btn-xing:active,.btn-xing.active,.open .dropdown-toggle.btn-xing{background-image:none}*/
 /*             .btn-xing.disabled,.btn-xing[disabled],fieldset[disabled] .btn-xing,.btn-xing.disabled:hover,.btn-xing[disabled]:hover,fieldset[disabled] .btn-xing:hover,.btn-xing.disabled:focus,.btn-xing[disabled]:focus,fieldset[disabled] .btn-xing:focus,.btn-xing.disabled:active,.btn-xing[disabled]:active,fieldset[disabled] .btn-xing:active,.btn-xing.disabled.active,.btn-xing[disabled].active,fieldset[disabled] .btn-xing.active{background-color:#0B614B;border-color:rgba(0,0,0,0.2)}*/
 /*         </style>*/
-/*         <div id="impressum_tab" class="col-sm-8 col-sm-offset-2 tab-pane">*/
+/*         <div id="impressum_tab" class="col-sm-12 tab-pane">*/
 /*             <h1>Impressum</h1><hr>*/
 /*             <div class="row">*/
 /*                 <div class="col-sm-6">*/

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ae1568-b1bd-402b-a5a2-9dc1d408019b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.php" afterPath="$PROJECT_DIR$/app/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/container.php" afterPath="$PROJECT_DIR$/app/container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routing.php" afterPath="$PROJECT_DIR$/app/routing.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/websocket.html" afterPath="$PROJECT_DIR$/app/templates/websocket.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/34/348bcd39fc4e13d640af9673048da2ab9dd9fb4e4941a0c980ad51da13d516f3.php" afterPath="$PROJECT_DIR$/cache/34/348bcd39fc4e13d640af9673048da2ab9dd9fb4e4941a0c980ad51da13d516f3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/9d/9db0fa8df802623fa0e1195597aeacc827365d461817984b542c341c3ac59e91.php" afterPath="$PROJECT_DIR$/cache/9d/9db0fa8df802623fa0e1195597aeacc827365d461817984b542c341c3ac59e91.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/home_guest.html" afterPath="$PROJECT_DIR$/app/templates/home_guest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/04/0453b0371c2d3579f38a5e0cdf621f11492bd5eb1a58b2b942b961a492158a55.php" afterPath="$PROJECT_DIR$/cache/04/0453b0371c2d3579f38a5e0cdf621f11492bd5eb1a58b2b942b961a492158a55.php" />
     </list>
     <ignored path="coder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,12 +74,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/chart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
               <caret line="295" column="25" selection-start-line="295" selection-start-column="25" selection-end-line="295" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_guest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/home_guest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="85" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,6 +142,7 @@
         <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/templates/chart.html" />
         <option value="$PROJECT_DIR$/app/templates/chart.js" />
+        <option value="$PROJECT_DIR$/app/templates/home_guest.html" />
       </list>
     </option>
   </component>
@@ -329,12 +342,12 @@
       <updated>1472053791118</updated>
       <workItem from="1472053793934" duration="303000" />
       <workItem from="1472067525173" duration="3030000" />
-      <workItem from="1472666494479" duration="3318000" />
+      <workItem from="1472666494479" duration="4183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6651000" />
+    <option name="totallyTimeSpent" value="7516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -542,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/home_guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/google_map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -619,6 +624,21 @@
         <state relative-caret-position="525">
           <caret line="295" column="25" selection-start-line="295" selection-start-column="25" selection-end-line="295" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/home_guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="85" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
