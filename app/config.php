@@ -65,9 +65,8 @@ $arrConfig['user_navigation']['left'] = [
     '1' => ['text' => 'App Demos', 'children' => [
         '0' => ['text' => 'Webform', 'icon' => 'fa fa-bars', 'linkto' => 'home'],
         '1' => ['text' => 'Charts', 'icon' => 'fa fa-line-chart', 'linkto' => 'demo_chart'],
-        '2' => ['divider' => true],
-        '3' => ['text' => 'GoogleMap', 'icon' => 'fa fa-street-view', 'linkto' => 'demo_googlemap'],
-        '4' => ['text' => 'WebSockets', 'icon' => 'fa fa-video-camera', 'linkto' => 'demo_websocket'],
+        '2' => ['text' => 'GoogleMap', 'icon' => 'fa fa-street-view', 'linkto' => 'demo_googlemap'],
+        '3' => ['text' => 'WebSockets', 'icon' => 'fa fa-video-camera', 'linkto' => 'demo_websocket'],
     ]]
 ];
 $arrConfig['user_navigation']['right'] = [
