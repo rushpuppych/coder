@@ -18,6 +18,11 @@ $container['UserMenuController'] = function ($container) {
 };
 
 
+// WebForm Demo Controller
+$container['WebFormController'] = function ($container) {
+    return new \app\controller\WebFormController($container);
+};
+
 // Chart Demo Controller
 $container['ChartController'] = function ($container) {
     return new \app\controller\ChartController($container);

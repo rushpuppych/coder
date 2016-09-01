@@ -63,13 +63,15 @@ $arrConfig['public_navigation']['right'] = [];
 $arrConfig['user_navigation']['left'] = [
     '0' => ['text' => 'Dashboard', 'linkto' => 'home'],
     '1' => ['text' => 'App Demos', 'children' => [
-        '0' => ['text' => 'Webform', 'icon' => 'fa fa-bars', 'linkto' => 'home'],
+        '0' => ['text' => 'Webform', 'icon' => 'fa fa-bars', 'linkto' => 'demo_webform'],
         '1' => ['text' => 'Charts', 'icon' => 'fa fa-line-chart', 'linkto' => 'demo_chart'],
         '2' => ['text' => 'GoogleMap', 'icon' => 'fa fa-street-view', 'linkto' => 'demo_googlemap'],
         '3' => ['text' => 'WebSockets', 'icon' => 'fa fa-video-camera', 'linkto' => 'demo_websocket'],
     ]]
 ];
+
 $arrConfig['user_navigation']['right'] = [
+    '0' => ['text' => '', 'icon' => 'fa fa-envelope', 'badge'=> '5', 'linkto' => 'home'],
     '1' => ['text' => '', 'icon' => 'fa fa-user',  'children' => [
         '0' => ['text' => 'Settings', 'icon' => 'fa fa-cog', 'linkto' => 'user_settings', 'args' => ['code' => 'ok']],
         '1' => ['divider' => true],

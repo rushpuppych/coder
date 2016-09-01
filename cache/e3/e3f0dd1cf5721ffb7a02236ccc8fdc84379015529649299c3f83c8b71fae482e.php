@@ -53,8 +53,13 @@ class __TwigTemplate_4827b82640c4b0f8d816b5bc669072e78c124b2e908e16e948d5c22bec8
                 // line 24
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "icon", array()), "html", null, true);
                 echo "\"></i> ";
+                if ($this->getAttribute($context["navi"], "badge", array(), "any", true, true)) {
+                    echo "<span class=\"badge\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "badge", array()), "html", null, true);
+                    echo "</span> ";
+                }
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "text", array()), "html", null, true);
-                echo " <span class=\"caret\"></span></a>
+                echo " </a>
                         <ul class=\"dropdown-menu\">
                             ";
                 // line 26
@@ -70,6 +75,11 @@ class __TwigTemplate_4827b82640c4b0f8d816b5bc669072e78c124b2e908e16e948d5c22bec8
                         echo "\"><i class=\"";
                         echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "icon", array()), "html", null, true);
                         echo "\"></i> ";
+                        if ($this->getAttribute($context["child"], "badge", array(), "any", true, true)) {
+                            echo "<span class=\"badge\">";
+                            echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "badge", array()), "html", null, true);
+                            echo "</span> ";
+                        }
                         echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "text", array()), "html", null, true);
                         echo "</a></li>
                                 ";
@@ -84,6 +94,11 @@ $context["child"], "linkto", array(), "any", true, true)) {
                             echo "\"><i class=\"";
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "icon", array()), "html", null, true);
                             echo "\"></i> ";
+                            if ($this->getAttribute($context["child"], "badge", array(), "any", true, true)) {
+                                echo "<span class=\"badge\">";
+                                echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "badge", array()), "html", null, true);
+                                echo "</span> ";
+                            }
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "text", array()), "html", null, true);
                             echo "</a></li>
                                     ";
@@ -94,6 +109,11 @@ $context["child"], "linkto", array(), "any", true, true)) {
                             echo "\"><i class=\"";
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "icon", array()), "html", null, true);
                             echo "\"></i> ";
+                            if ($this->getAttribute($context["child"], "badge", array(), "any", true, true)) {
+                                echo "<span class=\"badge\">";
+                                echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "badge", array()), "html", null, true);
+                                echo "</span> ";
+                            }
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "text", array()), "html", null, true);
                             echo "</a></li>
                                     ";
@@ -123,6 +143,11 @@ $context["navi"], "href", array(), "any", true, true)) {
                 echo "\"><i class=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "icon", array()), "html", null, true);
                 echo "\"></i> ";
+                if ($this->getAttribute($context["navi"], "badge", array(), "any", true, true)) {
+                    echo "<span class=\"badge\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "badge", array()), "html", null, true);
+                    echo "</span> ";
+                }
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "text", array()), "html", null, true);
                 echo "</a></li>
                     ";
@@ -134,6 +159,11 @@ $context["navi"], "linkto", array(), "any", true, true)) {
                 echo "\"><i class=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "icon", array()), "html", null, true);
                 echo "\"></i> ";
+                if ($this->getAttribute($context["navi"], "badge", array(), "any", true, true)) {
+                    echo "<span class=\"badge\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "badge", array()), "html", null, true);
+                    echo "</span> ";
+                }
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "text", array()), "html", null, true);
                 echo "</a></li>
                     ";
@@ -163,8 +193,13 @@ $context["navi"], "linkto", array(), "any", true, true)) {
                 // line 54
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "icon", array()), "html", null, true);
                 echo "\"></i> ";
+                if ($this->getAttribute($context["navi"], "badge", array(), "any", true, true)) {
+                    echo "<span class=\"badge\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "badge", array()), "html", null, true);
+                    echo "</span> ";
+                }
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "text", array()), "html", null, true);
-                echo " <span class=\"caret\"></span></a>
+                echo "</a>
                         <ul class=\"dropdown-menu\">
                             ";
                 // line 56
@@ -180,6 +215,11 @@ $context["navi"], "linkto", array(), "any", true, true)) {
                         echo "\"><i class=\"";
                         echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "icon", array()), "html", null, true);
                         echo "\"></i> ";
+                        if ($this->getAttribute($context["child"], "badge", array(), "any", true, true)) {
+                            echo "<span class=\"badge\">";
+                            echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "badge", array()), "html", null, true);
+                            echo "</span> ";
+                        }
                         echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "text", array()), "html", null, true);
                         echo "</a></li>
                                 ";
@@ -194,6 +234,11 @@ $context["child"], "linkto", array(), "any", true, true)) {
                             echo "\"><i class=\"";
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "icon", array()), "html", null, true);
                             echo "\"></i> ";
+                            if ($this->getAttribute($context["child"], "badge", array(), "any", true, true)) {
+                                echo "<span class=\"badge\">";
+                                echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "badge", array()), "html", null, true);
+                                echo "</span> ";
+                            }
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "text", array()), "html", null, true);
                             echo "</a></li>
                                     ";
@@ -204,6 +249,11 @@ $context["child"], "linkto", array(), "any", true, true)) {
                             echo "\"><i class=\"";
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "icon", array()), "html", null, true);
                             echo "\"></i> ";
+                            if ($this->getAttribute($context["child"], "badge", array(), "any", true, true)) {
+                                echo "<span class=\"badge\">";
+                                echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "badge", array()), "html", null, true);
+                                echo "</span> ";
+                            }
                             echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "text", array()), "html", null, true);
                             echo "</a></li>
                                     ";
@@ -233,6 +283,11 @@ $context["navi"], "href", array(), "any", true, true)) {
                 echo "\"><i class=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "icon", array()), "html", null, true);
                 echo "\"></i> ";
+                if ($this->getAttribute($context["navi"], "badge", array(), "any", true, true)) {
+                    echo "<span class=\"badge\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "badge", array()), "html", null, true);
+                    echo "</span> ";
+                }
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "text", array()), "html", null, true);
                 echo "</a></li>
                     ";
@@ -244,6 +299,11 @@ $context["navi"], "linkto", array(), "any", true, true)) {
                 echo "\"><i class=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "icon", array()), "html", null, true);
                 echo "\"></i> ";
+                if ($this->getAttribute($context["navi"], "badge", array(), "any", true, true)) {
+                    echo "<span class=\"badge\">";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "badge", array()), "html", null, true);
+                    echo "</span> ";
+                }
                 echo twig_escape_filter($this->env, $this->getAttribute($context["navi"], "text", array()), "html", null, true);
                 echo "</a></li>
                     ";
@@ -274,7 +334,7 @@ $context["navi"], "linkto", array(), "any", true, true)) {
 
     public function getDebugInfo()
     {
-        return array (  258 => 77,  252 => 76,  242 => 74,  240 => 73,  231 => 72,  229 => 71,  225 => 69,  219 => 68,  215 => 66,  212 => 65,  202 => 63,  192 => 61,  189 => 60,  187 => 59,  178 => 58,  175 => 57,  171 => 56,  164 => 54,  161 => 53,  158 => 52,  154 => 51,  148 => 47,  142 => 46,  132 => 44,  130 => 43,  121 => 42,  119 => 41,  115 => 39,  109 => 38,  105 => 36,  102 => 35,  92 => 33,  82 => 31,  79 => 30,  77 => 29,  68 => 28,  65 => 27,  61 => 26,  54 => 24,  51 => 23,  48 => 22,  44 => 21,  33 => 13,  19 => 1,);
+        return array (  318 => 77,  312 => 76,  297 => 74,  295 => 73,  281 => 72,  279 => 71,  275 => 69,  269 => 68,  265 => 66,  262 => 65,  247 => 63,  232 => 61,  229 => 60,  227 => 59,  213 => 58,  210 => 57,  206 => 56,  194 => 54,  191 => 53,  188 => 52,  184 => 51,  178 => 47,  172 => 46,  157 => 44,  155 => 43,  141 => 42,  139 => 41,  135 => 39,  129 => 38,  125 => 36,  122 => 35,  107 => 33,  92 => 31,  89 => 30,  87 => 29,  73 => 28,  70 => 27,  66 => 26,  54 => 24,  51 => 23,  48 => 22,  44 => 21,  33 => 13,  19 => 1,);
     }
 }
 /* */
@@ -300,16 +360,16 @@ $context["navi"], "linkto", array(), "any", true, true)) {
 /*                 {% for navi in navigation.left %}*/
 /*                     {% if navi.children is defined %}*/
 /*                     <li class="dropdown">*/
-/*                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {{ navi.text }} <span class="caret"></span></a>*/
+/*                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }} </a>*/
 /*                         <ul class="dropdown-menu">*/
 /*                             {% for child in navi.children %}*/
 /*                                 {% if child.href is defined %}*/
-/*                                     <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>*/
+/*                                     <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>*/
 /*                                 {% elseif child.linkto is defined %}*/
 /*                                     {%if child.args is defined %}*/
-/*                                         <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>*/
+/*                                         <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>*/
 /*                                     {% else %}*/
-/*                                         <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>*/
+/*                                         <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>*/
 /*                                     {% endif %}*/
 /*                                 {% elseif child.divider is defined %}*/
 /*                                     <li role="separator" class="divider"></li>*/
@@ -318,9 +378,9 @@ $context["navi"], "linkto", array(), "any", true, true)) {
 /*                         </ul>*/
 /*                     </li>*/
 /*                     {% elseif navi.href is defined %}*/
-/*                         <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>*/
+/*                         <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>*/
 /*                     {% elseif navi.linkto is defined %}*/
-/*                         <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>*/
+/*                         <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>*/
 /*                     {% endif %}*/
 /*                 {% endfor %}*/
 /*             </ul>*/
@@ -330,16 +390,16 @@ $context["navi"], "linkto", array(), "any", true, true)) {
 /*                 {% for navi in navigation.right %}*/
 /*                     {% if navi.children is defined %}*/
 /*                     <li class="dropdown">*/
-/*                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {{ navi.text }} <span class="caret"></span></a>*/
+/*                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a>*/
 /*                         <ul class="dropdown-menu">*/
 /*                             {% for child in navi.children %}*/
 /*                                 {% if child.href is defined %}*/
-/*                                     <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>*/
+/*                                     <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>*/
 /*                                 {% elseif child.linkto is defined %}*/
 /*                                     {%if child.args is defined %}*/
-/*                                         <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>*/
+/*                                         <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>*/
 /*                                     {% else %}*/
-/*                                         <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>*/
+/*                                         <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>*/
 /*                                     {% endif %}*/
 /*                                 {% elseif child.divider is defined %}*/
 /*                                     <li role="separator" class="divider"></li>*/
@@ -348,9 +408,9 @@ $context["navi"], "linkto", array(), "any", true, true)) {
 /*                         </ul>*/
 /*                     </li>*/
 /*                     {% elseif navi.href is defined %}*/
-/*                     <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>*/
+/*                     <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>*/
 /*                     {% elseif navi.linkto is defined %}*/
-/*                     <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>*/
+/*                     <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>*/
 /*                     {% endif %}*/
 /*                 {% endfor %}*/
 /*             </ul>*/

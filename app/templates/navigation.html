@@ -21,16 +21,16 @@
                 {% for navi in navigation.left %}
                     {% if navi.children is defined %}
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {{ navi.text }} <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }} </a>
                         <ul class="dropdown-menu">
                             {% for child in navi.children %}
                                 {% if child.href is defined %}
-                                    <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                    <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>
                                 {% elseif child.linkto is defined %}
                                     {%if child.args is defined %}
-                                        <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                        <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>
                                     {% else %}
-                                        <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                        <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>
                                     {% endif %}
                                 {% elseif child.divider is defined %}
                                     <li role="separator" class="divider"></li>
@@ -39,9 +39,9 @@
                         </ul>
                     </li>
                     {% elseif navi.href is defined %}
-                        <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                        <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>
                     {% elseif navi.linkto is defined %}
-                        <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                        <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -51,16 +51,16 @@
                 {% for navi in navigation.right %}
                     {% if navi.children is defined %}
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {{ navi.text }} <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a>
                         <ul class="dropdown-menu">
                             {% for child in navi.children %}
                                 {% if child.href is defined %}
-                                    <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                    <li><a href="{{ child.href }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>
                                 {% elseif child.linkto is defined %}
                                     {%if child.args is defined %}
-                                        <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                        <li><a href="{{ path_for(child.linkto, child.args) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>
                                     {% else %}
-                                        <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {{ child.text }}</a></li>
+                                        <li><a href="{{ path_for(child.linkto) }}"><i class="{{ child.icon }}"></i> {% if child.badge is defined %}<span class="badge">{{ child.badge }}</span> {% endif %}{{ child.text }}</a></li>
                                     {% endif %}
                                 {% elseif child.divider is defined %}
                                     <li role="separator" class="divider"></li>
@@ -69,9 +69,9 @@
                         </ul>
                     </li>
                     {% elseif navi.href is defined %}
-                    <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                    <li><a href="{{ navi.href }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>
                     {% elseif navi.linkto is defined %}
-                    <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {{ navi.text }}</a></li>
+                    <li><a href="{{ path_for(navi.linkto) }}"><i class="{{ navi.icon }}"></i> {% if navi.badge is defined %}<span class="badge">{{ navi.badge }}</span> {% endif %}{{ navi.text }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
