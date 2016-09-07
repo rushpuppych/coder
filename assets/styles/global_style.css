@@ -3,3 +3,52 @@
 div.panel-btn{
     margin-top: -3px;
 }
+
+table.time-table td {
+    border: 1px solid #BDBDBD;
+    font-size: 11px;
+    padding:2px;
+    min-width: 20px;
+    text-align: center;
+}
+
+table.time-table td.cell {
+    border-right: 1px dashed #D8D8D8;
+    border-left: none;
+}
+
+table.time-table td.lastcell {
+    border-left: none;
+}
+
+table.time-table td.year {
+    padding: 0px;
+    width: 40px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table.time-table td.year span {
+    position: absolute;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    margin-top: -10px;
+    margin-left: -7px;
+}
+
+table.time-table td.month {
+    padding: 0px;
+    width: 40px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table.time-table td.month span {
+    position: absolute;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    margin-top: -10px;
+    margin-left: -7px;
+}
