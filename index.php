@@ -28,9 +28,7 @@ if($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['SERVER_NAME'] == 'localho
     $app = new \Slim\App;
 }
 
-
 $container = $app->getContainer();
-
 
 // Include Config
 $arrConfig = [];
